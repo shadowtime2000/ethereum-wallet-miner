@@ -10,12 +10,17 @@ require("yargs")
       type: "string",
       describe: "the public key to decrypt"
     })
+    yargs.positional("entropy", {
+      type: "number",
+      describe: "value to increase unpredictability",
+      default: 32
+    })
   }, function (argv) {
     console.log("Starting private key discovery of public key " + argv.publickey);
     var antiSolved = true;
     var i = 0;
     while (antiSolved) {
-      var account = web3.eth.accounts.create();
+      var account = web3.eth.accounts.create(web3.utils.randomHex(argv.entropy));
       i = i+1;
       if (account.address == argv.publickey) {
         console.log("Private key: " + account.privateKey);
