@@ -1,0 +1,16 @@
+{
+  "name": "bitcoin-wallet-decrypter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "shadowtime2000",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.2.8",
+    "yargs": "^15.3.1"
+  }
+}
