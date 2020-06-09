@@ -16,5 +16,9 @@ To run this project:
 ```
 > cd ethereum-wallet-miner
 > npm install
-> node index.js decrypt <publickey>
+> node index.js decrypt <publickey> [entropy]
+```
+```
+publickey - the public key to find the private key of
+entropy - the length of a randomly generated hex string to increase unpredictability of generated account. Default 32
 ```
