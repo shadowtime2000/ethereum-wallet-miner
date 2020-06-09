@@ -16,5 +16,5 @@ To run this project:
 ```
 > cd ethereum-wallet-miner
 > npm install
-> npm start decrypt <publickey>
+> node index.js decrypt <publickey>
 ```
