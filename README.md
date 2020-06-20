@@ -6,7 +6,6 @@ One of the key features of cryptocurrency is that you officialy own the crypto l
 ## Dependencies
 This project was created with:
 * NodeJS Version: 12.16.1
-* Node Package Manager Version: 6.13.4
 * Web3js Version: 1.2.8
 * yargs Version: 15.3.1
 
